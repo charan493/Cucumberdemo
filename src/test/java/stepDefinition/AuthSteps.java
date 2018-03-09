@@ -15,7 +15,7 @@ public class AuthSteps {
 
     @Given("^User is on Home Page$")
     public void user_is_on_Home_Page() throws Throwable {
-        System.setProperty("webdriver.chrome.driver","F:\\Workspace\\SeleniumAutomation\\Resource\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","./src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://www.store.demoqa.com");
